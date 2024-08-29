@@ -48,6 +48,21 @@ export default function Home() {
           <List sx={{ listStyle: "decimal", gap: 0.5 }}>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText primary="Sign in with Pinata" />
+              <Button
+                sx={{ p: 1 }}
+                fullWidth
+                variant="contained"
+                color="primary"
+                onClick={() =>
+                  window.open(
+                    "https://app.devpinata.cloud/",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
+                Sign in with Pinata
+              </Button>
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText primary="Create an app on the Pinata dashboard." />
